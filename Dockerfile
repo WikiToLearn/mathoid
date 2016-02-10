@@ -4,10 +4,12 @@ RUN npm install -g mocha
 WORKDIR /usr/local/lib/node_modules/mathoid/
 RUN cp config.dev.yaml config.yaml
 
-RUN sed -i 's/num_workers: 0/num_workers: 40/g' config.yaml
 RUN sed -i 's/speechOn: true/speechOn: false/g' config.yaml
 RUN sed -i 's/png: true/png: false/g' config.yaml
 RUN sed -i 's/speakText: true/speakText: false/g' config.yaml
 
+ADD ./kickstart.sh /kickstart.sh
+RUN chmod +x /kickstart.sh
+
 EXPOSE 10044
-CMD ["node","server.js"]
+CMD ["/kickstart.sh"]
