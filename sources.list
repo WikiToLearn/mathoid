@@ -1,0 +1,6 @@
+deb http://mi.mirror.garr.it/mirrors/debian/ jessie main non-free contrib
+deb-src http://mi.mirror.garr.it/mirrors/debian/ jessie main non-free contrib
+deb http://security.debian.org/ jessie/updates main non-free contrib
+deb-src http://security.debian.org/ jessie/updates main non-free contrib
+deb http://mi.mirror.garr.it/mirrors/debian/ jessie-updates main non-free contrib
+deb-src http://mi.mirror.garr.it/mirrors/debian/ jessie-updates main non-free contrib
