@@ -6,7 +6,7 @@ WORKDIR /usr/local/lib/node_modules/mathoid/
 RUN cp config.dev.yaml config.yaml
 
 RUN sed -i 's/speechOn: true/speechOn: false/g' config.yaml
-RUN sed -i 's/png: true/png: false/g' config.yaml
+#RUN sed -i 's/png: true/png: false/g' config.yaml
 RUN sed -i 's/speakText: true/speakText: false/g' config.yaml
 
 ADD ./kickstart.sh /kickstart.sh
