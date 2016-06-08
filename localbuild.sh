@@ -1,2 +1,4 @@
 #!/bin/bash
-docker build -t wikitolearn/mathoid:0.4 .
+cd $(dirname "$(readlink -f $0)")
+docker build -t wikitolearn/mathoid:0.4.1 .
+
