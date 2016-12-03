@@ -14,6 +14,8 @@ RUN sed -i 's/speechOn: true/speechOn: false/g' config.yaml
 RUN sed -i 's/png: true/png: false/g' config.yaml
 RUN sed -i 's/speakText: true/speakText: false/g' config.yaml
 
+RUN sed -i 's/"TeX"/"Latin-Modern"/g' app.js
+
 ADD ./kickstart.sh /kickstart.sh
 RUN chmod +x /kickstart.sh
 
