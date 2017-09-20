@@ -1,4 +1,4 @@
-FROM node:5
+FROM node:6
 ADD ./docker-npm-install.sh /docker-npm-install.sh
 ADD ./docker-apt-get-install.sh /docker-apt-get-install.sh
 
