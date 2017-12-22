@@ -5,7 +5,7 @@ ADD ./docker-apt-get-install.sh /docker-apt-get-install.sh
 ADD ./sources.list /etc/apt/sources.list
 
 RUN /docker-apt-get-install.sh librsvg2-dev
-RUN /docker-npm-install.sh -g mathoid@0.6.4
+RUN /docker-npm-install.sh -g mathoid@0.7.0
 
 WORKDIR /usr/local/lib/node_modules/mathoid/
 
